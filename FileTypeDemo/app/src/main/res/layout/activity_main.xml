@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_tv"
+        android:background="@drawable/text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="文件清单"
+            android:layout_height="72dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingTop="27dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/files"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/title_tv"
+        android:layout_marginRight="15dp" />
+</RelativeLayout>
